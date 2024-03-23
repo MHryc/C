@@ -36,18 +36,22 @@ int main(void)
  * they return the value of appropriate operation
  */
  
-float add(float fNum, float sNum) {		// add
+float add(float fNum, float sNum) 		// add
+{	
 	return fNum + sNum;
 }
-float subtract(float fNum, float sNum) {	// subtract
+float subtract(float fNum, float sNum)		// subtract
+{
 	return fNum - sNum;
 }
 
-float multiply(float fNum, float sNum) {	// multiply
+float multiply(float fNum, float sNum)		// multiply
+{
 	return fNum * sNum;
 }
 
-float divide(float fNum, float sNum) {		// divide
+float divide(float fNum, float sNum) 		// divide
+{	
 	return fNum / sNum;
 }
 
@@ -56,8 +60,8 @@ float divide(float fNum, float sNum) {		// divide
  * based on operation code
  */
 
-float operation(int oper, float fNum, float sNum) {
-
+float operation(int oper, float fNum, float sNum)
+{
 	if (oper == 0) {
 		return add(fNum, sNum);
 	}
@@ -75,7 +79,8 @@ float operation(int oper, float fNum, float sNum) {
 	}
 
 	if (oper == 3, sNum == 0) {
-		return printf("Dividing by zero is forbiden.\n");
+		printf("|| Dividing by zero is forbiden.\n");
+		return 0;
 	}
 
 	else {
