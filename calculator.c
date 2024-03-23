@@ -12,19 +12,19 @@ int main(void)
 	float sNum= 0.0f;
 	float result = 0.0f;	// result of operation
 	int oper = 0;		// operation code
-
-	printf("__| MALCULATOR 1.0 |__\n");
+	
+	printf("__| MALCULATOR 1.0 |__\n");	// user input, 1st number
 	printf("|| Input 1st number: ");
 	scanf("%f", &fNum);
 
-	printf("|| Input 2nd number: ");
+	printf("|| Input 2nd number: ");	// user input, 2nd number
 	scanf("%f", &sNum);
 
-	printf("|| Choose operation:\n");
+	printf("|| Choose operation:\n");	// user input, operation choice
 	printf("|| 0 add\n|| 1 subtract\n|| 2 multiply\n|| 3 divide\n||=>");
 	scanf("%d", &oper);
 	
-	result = operation(oper, fNum, sNum);
+	result = operation(oper, fNum, sNum);	// calculate and print result
 	printf("|| Result: %f\n", result);
 	printf("||____________________\n");
 
